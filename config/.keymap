@@ -10,6 +10,19 @@
 #include <dt-bindings/zmk/outputs.h>
 
 / {
+    behaviors {
+        hrm: hrm {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HRM";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <150>;
+            hold-trigger-key-positions = <29 30 31 32 35 38 37 36>;
+            flavor = "tap-unless-interrupted";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -23,7 +36,7 @@
             // ------------------------------------------------------------------------------------------
 
             bindings = <
-&none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &kp TAB  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp P  &kp BSPC  &none  &none  &kp BSLH  &kp CLCK  &kp A  &kp S  &kp D  &kp F  &kp G  &kp H  &kp J  &kp K  &kp L  &none  &kp SQT  &none  &kp LSHFT  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA  &kp DOT  &kp FSLH  &none  &none  &kp LCTRL  &kp LGUI  &kp LALT  &none  &none  &none
+&none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &kp TAB  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp P  &kp BSPC  &none  &none  &kp BSLH  &hrm LMETA A  &hrm LALT S  &hrm LSHFT D  &hrm LCTRL F  &kp F  &kp G  &kp H  &kp J  &kp K  &kp L  &none  &kp SQT  &none  &kp LSHFT  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA  &kp DOT  &kp FSLH  &none  &none  &kp LCTRL  &kp LGUI  &kp LALT  &none  &none  &none
             >;
         };
 
