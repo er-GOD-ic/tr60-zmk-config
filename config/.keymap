@@ -36,7 +36,7 @@
             // ------------------------------------------------------------------------------------------
 
             bindings = <
-&none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &kp TAB  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp P  &kp BSPC  &none  &none  &kp BSLH  &hrm LMETA A  &hrm LALT S  &hrm LSHFT D  &hrm LCTRL F  &kp F  &kp G  &hrm RCTRL J  &hrm RSHFT K  &hrm RALT L  &hrm RMETA SEMICOLON  &none  &kp SQT  &none  &kp LSHFT  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA  &kp DOT  &kp FSLH  &none  &none  &kp LCTRL  &kp LGUI  &kp LALT  &none  &none  &none
+&none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &kp TAB  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp P  &kp BSPC  &none  &none  &kp BSLH  &hrm LMETA A  &hrm LALT S  &hrm LSHFT D  &hrm LCTRL F  &kp G  &kp H  &hrm RCTRL J  &hrm RSHFT K  &hrm RALT L  &hrm RMETA SEMICOLON  &kp SQT  &kp ENTER  &none  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA  &kp PERIOD  &kp SLASH  &kp FSLH  &none  &none  &kp INT_MUHENKAN  &kp LGUI  &kp INT_HENKAN  &none  &none  &none
             >;
         };
 
